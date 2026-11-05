@@ -1,0 +1,53 @@
+$colorBackgroundBody: #acacac;
+$colorBackgroundHeader: #534c4c;
+$colorBackgroundFooter:  #534c4c;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    background-color: $colorBackgroundBody;
+}
+
+header{
+    background-color: $colorBackgroundHeader;
+}
+
+footer{
+    background-color: $colorBackgroundFooter;
+}
+
+.header__search{
+    .form-control{
+        border-radius: 0.75rem 0 0 0.75rem;
+    }
+
+    .btn{
+        border-radius: 0 0.75rem 0.75rem 0;
+    }
+}
+
+.jumbotron{
+    background-color: $colorBackgroundHeader;
+
+}
+
+.form{
+    background-color: #b7b1b1;
+    border: 1px solid #060606;
+}
+
+.catalog-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: $colorBackgroundHeader;
+    color: #fff;
+    text-align: center;
+}
+
+.card-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover; 
+}
