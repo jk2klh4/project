@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ремонт телефонов</title>
+</head>
+<body class="d-flex flex-column h-100">
+    //= template/header.html
+<main class="flex-shrink-0">
+    <div class="container mt-4">
+        <h1 class="mb-3">Ремонт телефонов</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/card-2.jpg" class="img-fluid" alt="Ремонт телефонов">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Ремонт телефонов, заменим аккумулятор, прочистим от пыли по приятной цене
+                </p>
+                <p class="mb-3">Стоимость: от 500 руб.</p>
+                <a href="catalog.html" class="btn btn-success">Назад в каталог</a>
+            </div>
+        </div>
+        <div class="accordion" id="myAcc">
+            <div class="accordion-item mt-2">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                Сколько будет стоить заменить аккумулятор?
+                </button>
+                <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#myAcc">
+                <div class="accordion-body">Сама замена аккумулятора стоит 500 руб. Сам аккумулятор стоит от 3 000рублей, смотря какой у вас телефон.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                Если не работает динамик или разъем зарядки, что делать?
+                </button>
+                <div id="item2" class="accordion-collapse collapse" data-bs-parent="#myAcc">
+                <div class="accordion-body">Принесите свой телефон к нам на диагностику, выявим неподалку и устраним ее на месте.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    //= template/footer.html
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

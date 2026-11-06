@@ -7,13 +7,18 @@ rigger       = require('gulp-rigger'),
 fileinclude  = require('gulp-file-include'),
 gcmq         = require('gulp-group-css-media-queries');
 
-gulp.task('html_build', function () {
+gulp.task('js_vendor', function () {
+    return gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+        .pipe(gulp.dest('build/js/'));
+});
+
+gulp.task('html_build', gulp.series('js_vendor', function () {
     return gulp.src('src/*.html')
         .pipe(fileinclude())
         .pipe(rigger())
         .pipe(gulp.dest('build/'))
         .pipe(browserSync.reload({ stream: true }));
-});
+}));
 
 gulp.task('css_build', function () {
     return gulp.src('src/scss/*.scss')
@@ -32,11 +37,6 @@ gulp.task('js_build', function () {
         .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('js_vendor', function () {
-    return gulp.src('node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
-        .pipe(gulp.dest('build/js/'));
-});
-
 gulp.task('fonts_build', function () {
     return gulp.src('src/fonts/*.*')
         .pipe(gulp.dest('build/fonts/'))
@@ -44,7 +44,7 @@ gulp.task('fonts_build', function () {
 });
 
 gulp.task('img_build', function () {
-    return gulp.src('src/img/*.*')
+    return gulp.src('src/img/*.*' , {encoding: false})
         .pipe(gulp.dest('build/img/'))
         .pipe(browserSync.stream());
 });
@@ -61,4 +61,4 @@ gulp.task('webServer', function(done) {
     done();
 });
 
-gulp.task('default', gulp.series('html_build', 'css_build', 'js_build', 'js_vendor', 'fonts_build', 'img_build', 'webServer'));
+gulp.task('default', gulp.series('html_build', 'css_build', 'js_build', 'fonts_build', 'img_build', 'webServer'));

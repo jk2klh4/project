@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Компьютерные услуги</title>
+</head>
+<body class="d-flex flex-column h-100">
+    //= template/header.html
+<main class="flex-shrink-0">
+    <div class="container mt-4">
+        <h1 class="mb-3">Компьютерные услуги</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/card-6.jpg" class="img-fluid" alt="Ремонт кофемашин">
+            </div>
+            <div class="col-md-6">
+                <p>
+                   Выездной мастер, установит программные обеспечения, Windows и удалит все вирусы с вашего компьютера.
+                </p>
+                <p class="mb-3">Стоимость: от 1 000 руб.</p>
+                <a href="catalog.html" class="btn btn-success">Назад в каталог</a>
+            </div>
+        </div>
+        <div class="accordion" id="myAcc">
+            <div class="accordion-item mt-2">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                Нужно установить комплектующие, и настроить ПК, как это будет реализовано?
+                </button>
+                <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#myAcc">
+                <div class="accordion-body">Можно приехать к нам в любой филиал и установку можно произвести там, либо наш выездной мастер приедет на Ваш адрес и установит на дому.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                Сколько будет стоить замена термопасты?
+                </button>
+                <div id="item2" class="accordion-collapse collapse" data-bs-parent="#myAcc">
+                <div class="accordion-body">Замена термопасты будет стоить  от 1 000руб. с учетом стоимости термопасты.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    //= template/footer.html
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

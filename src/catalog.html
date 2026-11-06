@@ -8,7 +8,101 @@
 </head>
 <body class="d-flex flex-column h-100">
     //= template/header.html
-    //= template/catalog-main.html
+<main class="flex-shrink-0">
+    <div class="container">
+        <h1 class="mt-4">Каталог</h1>
+        <div id="catalogCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="catalog-slide">
+                        <img src="img/card-1.jpg" alt="Ремонт ноутбуков">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="catalog-slide">
+                        <img src="img/card-2.jpg" alt="Ремонт телефонов">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="catalog-slide">
+                        <img src="img/card-3.jpg" alt="Ремонт бытовой техники">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#catalogCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#catalogCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <div class="row py-3">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="img/card-1.jpg" class="card-img" alt="Ремонт ноутбуков">
+                    <div class="card-body">
+                        <h3 class="card-title">Ремонт ноутбуков</h3>
+                        <p class="card-text">Диагностика, замена матрицы, чистка от пыли.</p>
+                        <a href="card-1.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/card-2.jpg" class="card-img" alt="Ремонт телефонов">
+                    <div class="card-body">
+                        <h3 class="card-title">Ремонт телефонов</h3>
+                        <p class="card-text">Замена аккумулятора, прочистка от пыли.</p>
+                        <a href="card-2.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/card-3.jpg" class="card-img" alt="Восстановление дисков">
+                    <div class="card-body">
+                        <h3 class="card-title">Восстановление дисков</h3>
+                        <p class="card-text">Вернем данные с сломанных дисков.</p>
+                        <a href="card-3.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/card-4.jpg" class="card-img" alt="Ремонт кофемашин">
+                    <div class="card-body">
+                        <h3 class="card-title">Ремонт кофемашин</h3>
+                        <p class="card-text">Починим любую кофемашину.</p>
+                        <a href="card-4.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/card-5.jpg" class="card-img" alt="Ремонт кондиционера">
+                    <div class="card-body">
+                        <h3 class="card-title">Ремонт кондиционера</h3>
+                        <p class="card-text">Поможем обслужить кондиционер.</p>
+                        <a href="card-5.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/card-6.jpg" class="card-img" alt="Компьютерные услуги">
+                    <div class="card-body">
+                        <h3 class="card-title">Компьютерные услуги</h3>
+                        <p class="card-text">Установка ПО, чистка компьютера.</p>
+                        <a href="card-6.html" class="btn btn-success">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
     //= template/footer.html
 
     <script src="js/bootstrap.bundle.min.js"></script>

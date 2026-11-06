@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ремонт кондиционера</title>
+</head>
+<body class="d-flex flex-column h-100">
+    //= template/header.html
+<main class="flex-shrink-0">
+    <div class="container mt-4">
+        <h1 class="mb-3">Ремонт кондиционера</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/card-5.jpg" class="img-fluid" alt="Ремонт кофемашин">
+            </div>
+            <div class="col-md-6">
+                <p>
+                   Убираем сильный шум, поможем устранить утечку воды.
+                </p>
+                <p class="mb-3">Стоимость: от 1 800 руб.</p>
+                <a href="catalog.html" class="btn btn-success">Назад в каталог</a>
+            </div>
+        </div>
+        <div class="accordion" id="myAcc">
+            <div class="accordion-item mt-2">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                Неприятный запах из кондиционера, нужен ли выезд мастера?
+                </button>
+                <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#myAcc">
+                <div class="accordion-body">Требуется срочный выезд мастера, может пойти размножение бактерий и плесени.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                Кондиционер включается и выключается, что это может быть?
+                </button>
+                <div id="item2" class="accordion-collapse collapse" data-bs-parent="#myAcc">
+                <div class="accordion-body">Зачастую, это перегрев компрессора или поломка вентилятора. Наши мастера с легкостью справляются с данными задачами.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    //= template/footer.html
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ремонт ноутбуков</title>
+</head>
+<body class="d-flex flex-column h-100">
+    <header class="header">
+        <nav class="navbar navbar-expand">
+            <div class="container">
+                <div class="row w-100 align-items-center justify-content-end">
+                    <div class="col-md-3">
+                        <a class="navbar-brand" href="index.html">Ремонт электроники</a>
+                    </div>  
+                    <div class="col-md-5">
+                        <ul class="navbar-nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="catalog.html">Каталог</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-end">  
+                        <form class="d-flex header__search" role="search">
+                            <input class="form-control" type="search" placeholder="Поиск" aria-label="Поиск">
+                            <button class="btn btn-outline-success" type="submit">Найти</button>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </nav>
+    </header>
+<main class="flex-shrink-0">
+    <div class="container mt-4">
+        <h1 class="mb-3">Ремонт ноутбуков</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="img/card-1.jpg" class="img-fluid" alt="Ремонт ноутбуков">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Ремонтируем ноутбуки любых моделей: проводим диагностику, замены комплектующих
+                </p>
+                <p class="mb-3">Стоимость: от 1 500 руб.</p>
+                <a href="catalog.html" class="btn btn-success">Назад в каталог</a>
+            </div>
+        </div>
+        <div class="accordion" id="myAcc">
+            <div class="accordion-item mt-2">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#item1">
+                Сколько дней занимает ремонт?
+                </button>
+                <div id="item1" class="accordion-collapse collapse show" data-bs-parent="#myAcc">
+                <div class="accordion-body">В зависимости от поломки, в среднем от 1-го до 3-х дней</div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+                На какой срок выдается гарантия?
+                </button>
+                <div id="item2" class="accordion-collapse collapse" data-bs-parent="#myAcc">
+                <div class="accordion-body">Гарантия от нашего сервиса дается на год</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-3">
+                    <h5 class="">Контакты</h5>
+                    <p class="">+7(999)-999-99-99</p>
+                    <p class="">123@gmail.ru</p>
+                </div>  
+    
+                <div class="col-md-4">
+                    <ul class="nav d-flex flex-column align-items-center">
+                        <li class="nav-item"><a class="nav-link link-body-emphasis" href="index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link link-body-emphasis" href="about.html">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link link-body-emphasis" href="catalog.html">Каталог</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 d-flex flex-column align-items-end gap-3">  
+                    <a href="" class="nav-link">ВКонтакте</a>
+                    <a href="" class="nav-link">Telegram</a>
+                    <a href="" class="nav-link">Instagram</a>
+                </div> 
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
